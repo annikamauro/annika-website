@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <title>Annika Mauro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +9,49 @@
     <style>
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 20px; /* Optional padding */
+        }
+        table {
+            width: 100%; /* Make table full width */
+            margin-bottom: 20px; /* Space below the table */
+        }
+        td.photo {
+            width: 50%; /* Adjust as needed */
+        }
+        img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+        }
+        h2 {
+            width: 100%; /* Make h2 full width */
+            text-align: center; /* Center align the title */
+            margin: 20px 0; /* Space around the title */
         }
         iframe {
-            width: 80%;
-            height: 80%;
+            width: 100%; /* Make iframe full width */
+            height: 80vh; /* Set height as needed */
             border: none;
         }
     </style>
 </head>
-  <body>
+<body>
     <table>
-      <tbody>
-        <tr>
-          <td class="bio">
-            <h1 class="name center">Annika Mauro</h1>
-            <div class="email center">amauro@stanford.edu</div>
-            <p> </p>
-          </td>
-          <td class="photo">
-            <img src="assets/grad-photo.png" width="100%" height="100%">
-          </td>
-        </tr>
-      </tbody>
+        <tbody>
+            <tr>
+                <td class="bio">
+                    <h1 class="name center">Annika Mauro</h1>
+                    <div class="email center">amauro@stanford.edu</div>
+                </td>
+                <td class="photo">
+                    <img src="assets/grad-photo.png" alt="Annika Mauro">
+                </td>
+            </tr>
+        </tbody>
     </table>
     <h2>Resume</h2>
- <iframe src="assets/Anna_Mauro_Resume_Web.pdf" title="Resume"></iframe>
-  </body>
+    <iframe src="assets/Anna_Mauro_Resume_Web.pdf" title="Resume"></iframe>
+</body>
 </html>
